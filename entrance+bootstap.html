@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+</head>
+<script>
+    $(function(){
+        $("#image img:first").hover(
+                function(){
+                $(this).attr("src","images/startleft2.gif").animate({opacity:"1"},1000);
+                },function(){
+                    $(this).attr("src","images/startleft1.gif").animate({opacity:"0.3"},1000);
+
+                }
+        );
+
+        $("#image img:last").hover(
+                function(){
+                    $(this).attr("src","images/startright2.gif").animate({opacity:"1"},1000);
+                },function(){
+                    $(this).attr("src","images/startright1.gif").animate({opacity:"0.3"},1000);
+                }
+        );
+    });
+</script>
+<style>
+    body{background:url(images/top_bg.jpg);}
+</style>
+<body>
+<div class="container">
+
+    <div class="row" style="height: 50px;">
+        <div class="col-md-12"><img src="images/logo-5.png" style="display:block;margin: auto;"></div>
+    </div>
+    <div class="row" id="image">
+        <div class="col-md-6"><a href="homepage&bootstrap.html"><img src="images/startleft1.gif" style="width:100%;height: auto;"></a></div>
+        <div class="col-md-6"><a href="homepage&bootstrap.html"><img src="images/startright1.gif" style="width:100%;height: auto;"></a></div>
+    </div>
+    <div class="row" style="height: 80px;">
+        <div class="col-md-12"><img src="images/startbottom.jpg" style="width:100%;height:100%;"></div>
+    </div>
+</div>
+</body>
+</html>

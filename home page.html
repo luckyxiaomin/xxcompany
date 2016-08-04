@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<script type="text/javascript" src="js/sportFramefeijson.js"></script>
+<script src="js/jquery-2.2.0.min.js"></script>
+	<script>
+		$(function(){
+
+			$("#job ul").width($("#job li:first").width()*10);
+			$("#job li").clone().appendTo($("#job ul"));
+
+		$(".left").on("click",function(){
+			var width=$("#job li:first").width();
+			var cLeft=$("#job ul").get(0).offsetLeft;
+			if(cLeft==-width*4)
+			{
+				$(".left").off("click");
+			}
+				$("#job ul").css("left",cLeft-width);
+
+			});
+
+			$(".right").on("click",function(){
+				var width=$("#job li:first").width();
+				var cLeft=$("#job ul").get(0).offsetLeft;
+				if(cLeft==-width)
+				{
+					$(".right").off("click");
+				}
+
+				$("#job ul").css("left",cLeft+width);
+
+			});
+		});
+	</script>
+<script>
+window.onload=function()
+{
+  	var oNav2=document.getElementById('nav2');
+	var oUl=oNav2.getElementsByTagName('ul')[0];
+	var aImg=oNav2.getElementsByTagName('img');
+	var oBtn=document.getElementById('btn');
+	var aBtn=oBtn.getElementsByTagName('input');
+	var count=1;
+	var m=4;
+		var timer=null;
+	for(var i=0;i<aBtn.length;i++)
+	{
+	 aBtn[i].index=i;
+	 aBtn[i].onclick=function()
+	 {
+		 for(var i=0;i<aBtn.length;i++)
+		 {
+		    aBtn[i].className="";	 
+		 }
+		 count=m=this.index;
+		 aBtn[this.index].className="active";
+		 sport(oUl,'left',-this.index*cssStyle(aImg[0],'width'));
+	 };	
+	}
+	cssStyle(oUl,'width',cssStyle(aImg[0],'width')*aImg.length);
+	timer=setInterval(function(){
+		if(count<aImg.length)
+		{
+		for(var i=0;i<aBtn.length;i++)
+		{
+		  aBtn[i].className="";
+		}
+		  aBtn[count].className="active";
+		 sport(oUl,'left',-count*cssStyle(aImg[0],'width'));
+		 count++;
+		 m++;
+		 
+		}else
+		{
+			if(m>0)
+			{ 	
+			   m--;
+			  for(var i=0;i<aBtn.length;i++)
+		     {
+		      aBtn[i].className="";
+		     }
+		      aBtn[m].className="active";
+			  sport(oUl,'left',-m*cssStyle(aImg[0],'width'));
+				
+			}
+			else
+			{
+			 m=4;
+			 count=1;	
+			}
+		}
+	},3000)
+ var oCourse=document.getElementById('course');
+ var aMg=oCourse.getElementsByTagName('img');
+ var oImgl=document.getElementById('imgl');
+ var oImgr=document.getElementById('imgr');
+for(var j=0;j<aMg.length;j++)
+{
+ aMg[j].index=j;
+   aMg[j].onmouseover=function()
+   {
+	   for(var i=0;i<aMg.length;i++)
+	   {
+		aMg[i].src='images/h-'+(i+1)+'.png';   
+		}
+	  aMg[this.index].src='images/h-'+(this.index+1)+'-over.png';
+	   
+	};	
+}
+
+var oPhone=document.getElementById('phone');
+var oPhonel=document.getElementById('phonel');
+var oPhoner=document.getElementById('phoner');
+var aPhone=oPhoner.getElementsByTagName('img')[0];
+aPhone.onmouseover=function()
+{
+	oPhonel.style.display='block';
+};
+
+aPhone.onmouseout=function()
+{
+	oPhonel.style.display='none';
+};
+
+var oMl=document.getElementById('main-left');
+var aLi=oMl.getElementsByTagName('li');
+var aDiv=oMl.getElementsByTagName('div');
+
+for(var i=0;i<3;i++)
+{
+aLi[i].index=i;
+aLi[i].onclick=function()
+{
+	for(var i=0;i<3;i++)
+	{
+	aLi[i].className=null;
+	aDiv[i].style.display='none';	
+	}
+	aLi[this.index].className='news';
+	aDiv[this.index].style.display='block';
+	
+};	
+}
+
+};
+
+</script>
+	<link type="text/css" rel="stylesheet" href="css/css2.css">
+</head>
+
+<body>
+<div id="box">
+<div id="hello">
+<img src="images/phone.png">客服热线：4000-000-000&nbsp;|&nbsp;关注我们<img src="images/weibo.png">&nbsp;<img src="images/weixin.png">
+<span>您好，欢迎来到西部开源技术中心&nbsp;|&nbsp;帮助中心</span>
+</div>
+<div id="top"><img src="images/top02.gif"></div>
+<div id="nav1">
+<ul>
+<li style="margin-left:200px"><a href="home%20page.html">首页</a></li>
+<li><a href="about.html">关于开源</a></li>
+<li><a href="#">教育培训</a></li>
+<li><a href="#">学习视频</a></li>
+<li><a href="#">就业招聘</a></li>
+<li><a href="#">考务系统</a></li>
+<li><a href="#">企业技术支持</a></li>
+<li><a href="#">联系我们</a></li>
+</ul>
+<input type="text" size="10px"/>
+<input type="button" style="background:#630; padding:3px 20px; color:#FFF" value="GO"/>
+</div>
+<div id="nav2">
+<div id="btn">
+<input type="button" class="active"/>
+<input type="button"/>
+<input type="button"/>
+<input type="button"/>
+</div>
+<ul>
+<li><img src="images/0.jpg"></li>
+<li><img src="images/1.jpg"></li>
+<li><img src="images/2.jpg"></li>
+<li><img src="images/3.jpg"></li>
+</ul>
+</div>
+<div id="login">最新公告【西部开源技术中心参加2015年西部教育论坛】
+账号：<input type="text" value=""/>
+密码：<input type="password" value=""/>
+</div>
+<div id="main">
+<div id="main-top"><span>Education教育培训</span><p>西部开源技术中心独创五大就业方向课程</p>LINUX系统运维工程师/JAVA EE工程师/C开发工程师/Android工程师/Web前端工程师</div>
+<img id="imgl" src="images/main_wrapper_left.png" style="position:absolute; left:100px; top:220px">
+<div id="course">
+<ul>
+<li><img src="images/h-1.png"></li>
+<li><img src="images/h-2.png"></li>
+<li><img src="images/h-3.png"></li>
+<li><img src="images/h-4.png"></li>
+</ul>
+</div>
+<img id="imgr" src="images/main_wrapper_right.png" style="position:absolute; right:100px; top:220px">
+<div id="phone">
+
+<div id="phoner">
+<img src="images/float_bar_qq-over.png">
+<img src="images/float_bar_phone-over.png">
+<img src="images/float_bar_weichat-over.png">
+<img src="images/float_bar_top-over.png">
+</div>
+<div id="phonel">
+<img src="images/float_bar_qq_info.png">
+</div>
+</div>
+<div id="main-left">
+<ul>
+<li class="news"><img src="images/news.png">新闻</li>
+<li><img src="images/notice.png">公告</li>
+<li><img src="images/job.png">招聘</li>
+</ul>
+<div style="display:block"><img id="ps" src="images/pic.png"><span style="position:absolute;right:2px;top:210px">更多新闻<img src="images/more.png"></span>
+<ul style="font-size:18px; font-weight:200">
+<li>2015年11月11日</li>
+<p>西部开源技术中心毕业学员刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动，受到了各界人士的认可。</p>
+<li>2015年11月13日</li>
+<p>西部开源技术中心毕业学员刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动。</p>
+</ul>
+</div>
+<div>2</div>
+<div>3</div>
+</div>
+<div id="main-right">
+<div class="mr-til"><img src="images/info.png">就业信息</div>
+<div id="mr-1">
+<dl>
+<dt>.学员:</dt>
+<dd>王佳</dd>
+<dt>毕业院校:</dt>
+<dd>西安石油大学</dd>
+<dt>专业:</dt>
+<dd>c开发工程师</dd>
+<dt>就业单位:</dt>
+<dd>小米国际</dd>
+<dt>.学员:</dt>
+<dd>王佳</dd>
+<dt>毕业院校:</dt>
+<dd>西安石油大学</dd>
+<dt>专业:</dt>
+<dd>c开发工程师</dd>
+<dt>就业单位:</dt>
+<dd>小米国际</dd>
+<dt>.学员:</dt>
+<dd>王佳</dd>
+<dt>毕业院校:</dt>
+<dd>西安石油大学</dd>
+<dt>专业:</dt>
+<dd>c开发工程师</dd>
+<dt>就业单位:</dt>
+<dd>小米国际</dd>
+<dt>.学员:</dt>
+<dd>王佳</dd>
+<dt>毕业院校:</dt>
+<dd>西安石油大学</dd>
+<dt>专业:</dt>
+<dd>c开发工程师</dd>
+<dt>就业单位:</dt>
+<dd>小米国际</dd>
+</dl>
+</div>
+<div class="mr-til" style="margin-top:-10px"><img src="images/comp.png">企业案例</div>
+<div id="mr-2"><img src="images/comp-1.png">
+<dl>
+<dt>.企业名称：</dt>
+<dd>华为国际</dd>
+<dt>.合作项目:</dt>
+<dd>网络服务器优化项目</dd>
+<dt>.项目简介：</dt>
+<dd>华为技术有限公司是一家生产销售通信设备的民营通信科技公司.</dd>
+</dl>
+
+<img src="images/comp-2.png">
+<dl>
+<dt>.企业名称：</dt>
+<dd>京东商城</dd>
+<dt>.合作项目:</dt>
+<dd>网络服务器优化项目</dd>
+<dt>.项目简介：</dt>
+<dd>是中国最大的自营式电商企业.2015年第一季度在中国自营式b2c电商市场的占有率位56.3%，目前
+京东集团旗下设有京东商城.</dd>
+</dl>
+</div>
+</div>
+	<div id="main-b">
+		<div id="main-bt">
+       <span>Students&nbsp;优秀学员</span>
+		<p>西部开源技术中心成功为多家企业输送人才</p>
+		百度/网易/腾讯/京东/阿里巴巴/小米/华为
+		</div>
+		<div id="job">
+			<ul>
+				<li><img src="images/main_wrapper-1.png"></li>
+				<li><img src="images/main_wrapper-4.png"></li>
+				<li><img src="images/main_wrapper-3.png"></li>
+				<li><img src="images/main_wrapper-2.png"></li>
+				<li><img src="images/main_wrapper-5.png"></li>
+			</ul>
+		</div>
+		<img class="left" src="images/main_wrapper_left-comp.png">
+		<img class="right" src="images/main_wrapper_right-comp.png">
+	</div>
+</div>
+<div id="nav3">
+	<ul>
+		<li id="nav3-1">合作企业</li>
+		<li><a href="#">百度中国</a></li>
+		<li><a href="#">搜狐中国</a></li>
+		<li><a href="#">小米国际</a></li>
+		<li><a href="#">阿里巴巴</a></li>
+		<li><a href="#">华为国际</a></li>
+		<li><a href="#">天猫国际</a></li>
+		<li><a href="#">京东商场</a></li>
+		<li style="margin-left: 100px"><a href="#">更多合作企业></a></li>
+	</ul>
+</div>
+<div id="bt"><img src="images/stubottom01.gif"></div>
+
+</div>
+</body>
+</html>

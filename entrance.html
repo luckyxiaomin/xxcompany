@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>西部开源</title>
+<script type="text/javascript" src="js/sportFrame.js"></script>
+<script>
+window.onload=function()
+{
+	var aMain1=document.getElementById('main-1');
+	var aMain2=document.getElementById('main-2');
+	var oImg1=aMain1.getElementsByTagName('img')[0];
+	var oImg2=aMain2.getElementsByTagName('img')[0];
+		oImg1.onmouseover=function()
+	{
+		
+         oImg1.src='images/startleft2.gif';
+			oImg1.style.opacity=1; 
+		 
+	};
+	oImg1.onmouseout=function()
+	{
+         oImg1.src='images/startleft1.gif';
+		sport(oImg1,{opacity:30});
+	};
+	oImg2.onmouseover=function()
+	{
+         oImg2.src='images/startright2.gif';
+		 oImg2.style.opacity=1; 
+	};
+		oImg2.onmouseout=function()
+	{
+         oImg2.src='images/startright1.gif';
+		 	sport(oImg2,{opacity:30});
+	};
+		
+};
+</script>
+<style>
+*{margin:0px;padding:0px;border:0px;}
+body{ font-family:Verdana, Geneva, sans-serif;
+font-size:14px;
+color:#999;
+background:url(images/top_bg.jpg);}
+
+#top{
+	 width:800px;
+      height:80px;
+	  margin:auto;
+	  text-align:center;
+      line-height:80px;
+}
+
+#main{width:908px;
+      height:388px;
+	  margin:auto;
+}
+
+#main img{
+	width:454px;
+height:388px;
+opacity:0.3;
+filter:alpha(opacity:30);
+	}
+
+#main-1{width:454px;
+height:388px;
+float:left;}
+
+#main-2{width:454px;
+height:388px;
+float:left;}
+
+#bottom{
+	width:1000px;
+	height:100px;
+	margin:auto;
+	text-align:center;
+}
+#bottom img{ width:1000px;
+              height:50px;
+}
+</style>
+</head>
+
+<body>
+<div id="top"><img src="images/logo-5.png"></div>
+<div id="main">
+<div id="main-1"><a href="home%20page.html"><img src="images/startleft1.gif"></a></div>
+<div id="main-2"><a href="home%20page.html"><img src="images/startright1.gif"></a></div>
+</div>
+<div id="bottom"><img src="images/startbottom.jpg"></div>
+</body>
+</html>

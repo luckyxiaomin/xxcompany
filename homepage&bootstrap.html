@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .nav1 a{color:#ffffff;}
+        .nav1 a:hover{background:gray; }
+        body{font-size: 12px;}
+        #tab1{position: relative;
+        padding: 10px 20px;}
+        #tab1 span{position:absolute;
+               right:3px;
+        top:200px;}
+
+        .information dt{width:80px;}
+        .information dd{margin-left: 110px;}
+        .left{
+            position:absolute;
+            left: 0;
+            bottom:100px;
+        }
+
+        .right{
+            position:absolute;
+            right: 0;
+            bottom:100px;
+        }
+
+        .topchange{top:5em;}
+    </style>
+
+</head>
+<body>
+<div class="container">
+
+    <div class="row" style="background: lightgray;">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/phone.png">客服热线4000-000-000&nbsp;|&nbsp;关注我们<img src="images/weibo.png">&nbsp;
+            <img src="images/weixin.png"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-3">您好，欢迎来到西部开源技术中心&nbsp;|&nbsp;帮助中心</div>
+    </div>
+    <div class="row">
+        <div class="col-md-12"><img src="images/top02.gif" style="width: 100%;"></div>
+    </div>
+    <div class="row" >
+        <div class="col-md-12">
+            <nav class="navbar navbar-default"  style="background:lawngreen;">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed"
+                                data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="homepage&bootstrap.html">首页</a></li>
+                            <li><a href="about&bootstrap.html">关于开源</a></li>
+                            <li><a href="#">教育培训</a></li>
+                            <li><a href="#">学习视频</a></li>
+                            <li><a href="#">就业招聘</a></li>
+                            <li><a href="#">考务系统</a></li>
+                            <li><a href="#">企业支持</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">GO</button>
+                        </form>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <!--wrapper for slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/0.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/1.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/2.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/3.jpg">
+                </div>
+            </div>
+            <!--controls-->
+            <a class="left carousel-control topchange" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">previous
+              </span></a>
+            <a class="right carousel-control topchange" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">next
+              </span></a>
+        </div>
+        </div>
+    </div>
+    <div class="row navbar-form">
+        <div class="col-md-4  col-md-offset-1"><span>最新公告：【西部开源技术中心参加2015年西部教育论坛】</span></div>
+        <div class="col-md-5">
+            <form class="form-group">
+                <label for="name">账号:</label><input type="text" id="name">
+                <label for="mima">密码:<input type="password" id="mima"></label>
+                <input type="button" class="btn-success" value="登录">
+            </form>
+        </div>
+        <div class="col-md-1"><a href="#">快速注册</a></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+            <h1 style="color: green;">Education教育培训</h1>
+            <h4><strong>西部开源技术中心独创五大就业方向课程</strong></h4>
+            <small>LINUX系统运维工程师/JAVA EE工程师/C开发工程师/Android工程师/Web前端工程师</small>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6"><img src="images/float_bar_qq_info.png"></div>
+                <div class="col-md-4 col-md-offset-2">
+                    <ul class="nav">
+                    <li><img src="images/float_bar_qq-over.png"></li>
+                    <li><img src="images/float_bar_phone-over.png"></li>
+                    <li><img src="images/float_bar_weichat-over.png"></li>
+                    <li><img src="images/float_bar_top-over.png"></li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+
+    <!--课程-->
+    <div class="row" id="course">
+        <div class="col-md-2 col-md-offset-2">
+            <img src="images/h-1.png">
+        </div>
+        <div class="col-md-2">
+            <img src="images/h-2.png">
+        </div>
+        <div class="col-md-2">
+            <img src="images/h-3.png">
+        </div>
+        <div class="col-md-2">
+            <img src="images/h-4.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#tab1" data-toggle="tab"><img src="images/news.png">新闻</a></li>
+                <li><a href="#tab2" data-toggle="tab"><img src="images/notice.png">公告</a></li>
+                <li><a href="#tab3" data-toggle="tab"><img src="images/job.png">招聘</a></li>
+            </ul>
+            <div class="tab-content" style="padding: 10px;">
+                <div class="tab-pane active" id="tab1"><img src="images/pic.png"><span>更多新闻
+              <img src="images/more.png"></span>
+                    <h4>.2015年11月11日</h4>
+                    <p>西部开源技术中心毕业学员刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动，受到了各界人士的认可。</p>
+                    <h4>.2015年11月11日</h4>
+                    <p>西部开源技术中心毕业学员刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动，受到了各界人士的认可。</p>
+                </div>
+                <div class="tab-pane" id="tab2">1<br>32<br>434</div>
+                <div class="tab-pane" id="tab3">1<br>32<br>434</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#"><img src="images/info.png">就业信息</a></li>
+                    <li class="navbar-right"><a href="#">了解更多<img src="images/more.png"></a></li>
+                </ul>
+            <table class="table">
+                <tr>
+                    <td>.学员:</td>
+                    <td>王佳</td>
+                    <td>毕业院校:</td>
+                    <td>西安石油大学</td>
+                    <td>专业:</td>
+                    <td>c开发工程师</td>
+                    <td>就业单位:</td>
+                    <td>小米国际</td>
+                </tr>
+                <tr>
+                    <td>.学员:</td>
+                    <td>王佳</td>
+                    <td>毕业院校:</td>
+                    <td>西安石油大学</td>
+                    <td>专业:</td>
+                    <td>c开发工程师</td>
+                    <td>就业单位:</td>
+                    <td>小米国际</td>
+                </tr>
+                <tr>
+                    <td>.学员:</td>
+                    <td>王佳</td>
+                    <td>毕业院校:</td>
+                    <td>西安石油大学</td>
+                    <td>专业:</td>
+                    <td>c开发工程师</td>
+                    <td>就业单位:</td>
+                    <td>小米国际</td>
+                </tr>
+                <tr>
+                    <td>.学员:</td>
+                    <td>王佳</td>
+                    <td>毕业院校:</td>
+                    <td>西安石油大学</td>
+                    <td>专业:</td>
+                    <td>c开发工程师</td>
+                    <td>就业单位:</td>
+                    <td>小米国际</td>
+                </tr>
+            </table>
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#"><img src="images/comp.png">企业案例</a></li>
+                        <li class="navbar-right"><a href="#">了解更多<img src="images/more.png"></a></li>
+                    </ul>
+            <div class="row" style="margin:15px 0;">
+                <div class="col-md-6">
+                    <img src="images/comp-1.png">
+                </div>
+                <div class="col-md-6">
+             <dl class="dl-horizontal information">
+                 <dt>.企业名称：</dt>
+                 <dd>华为国际</dd>
+                 <dt>.合作项目:</dt>
+                 <dd>网络服务器优化项目</dd>
+                 <dt>.项目简介：</dt>
+                 <dd>华为技术有限公司是一家生产销售通信设备的民营通信科技公司.</dd>
+             </dl>
+                </div>
+            </div>
+            <div class="row" style="margin:15px 0;">
+                <div class="col-md-6">
+                    <img src="images/comp-2.png">
+                </div>
+                <div class="col-md-6">
+                        <dl class="dl-horizontal information">
+                            <dt>.企业名称：</dt>
+                            <dd>京东商城</dd>
+                            <dt>.合作项目:</dt>
+                            <dd>网络服务器优化项目</dd>
+                            <dt>.项目简介：</dt>
+                            <dd>是中国最大的自营式电商企业.2015年第一季度在中国自营式b2c电商市场的占有率位56.3%，目前
+                                京东集团旗下设有京东商城.</dd>
+                        </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 20px;">
+        <div class="col-md-12 text-center">
+            <h1 style="color: green;">Students&nbsp;优秀学员</h1>
+            <h4><strong>西部开源技术中心成功为多家企业输送人才</strong></h4>
+            <small>百度/网易/腾讯/京东/阿里巴巴/小米/华为</small>
+        </div>
+    </div>
+    <div class="row" style="position: relative;">
+        <div class="col-md-2 col-md-offset-1"><img src="images/main_wrapper-1.png"><p>学员姓名：刘梦</p><p>就业企业：阿里巴巴中国</p></div>
+        <div class="col-md-2"><img src="images/main_wrapper-4.png">
+        <p>学员姓名：刘梦</p><p>就业企业：阿里巴巴中国</p></div>
+        <div class="col-md-2"><img src="images/main_wrapper-3.png"><p>学员姓名：刘梦</p><p>就业企业：阿里巴巴中国</p></div>
+        <div class="col-md-2"><img src="images/main_wrapper-2.png"><p>学员姓名：刘梦</p><p>就业企业：阿里巴巴中国</p></div>
+        <div class="col-md-2"><img src="images/main_wrapper-5.png"><p>学员姓名：刘梦</p><p>就业企业：阿里巴巴中国</p></div>
+        <img class="left" src="images/main_wrapper_left-comp.png">
+        <img class="right" src="images/main_wrapper_right-comp.png">
+    </div>
+    <div class="row" style="background:#390;">
+        <div class="col-md-10 col-md-offset-1">
+            <ul class="nav nav-tabs nav1">
+                <li class="navbar-brand" style="background:#8a6d3b;">合作企业</li>
+                <li><a href="#">百度中国</a></li>
+                <li><a href="#">搜狐中国</a></li>
+                <li><a href="#">小米国际</a></li>
+                <li><a href="#">阿里巴巴</a></li>
+                <li><a href="#">华为国际</a></li>
+                <li><a href="#">天猫国际</a></li>
+                <li><a href="#">京东商场</a></li>
+                <li class="navbar-right"><a href="#">更多合作企业&gt;</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-md-12" style="padding: 0;">
+            <img src="images/stubottom01.gif" style="width: 100%;height: auto;">
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/holder.min.js"></script>
+<!--课程-->
+<script>
+    $(function(){
+        $("#course").find("img").mouseover(function(){
+            var index=$("#course").find("img").index(this);
+            $("#course").find("img").each(function(i){
+                $(this).attr("src","images/h-"+(i+1)+".png");
+            });
+            $(this).attr("src","images/h-"+(index+1)+"-over.png");
+        });
+    });
+</script>
+</body>
+</html>

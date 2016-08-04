@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关于开源</title>
+<script src="js/jquery-2.2.0.min.js"></script>
+    <script>
+        $(function(){
+            var index=0;
+            $("#ph11 img").hover(function(){
+                index=$("#ph11 img").index(this);
+                $("#ph2 img:eq("+index+")").css("visibility","visible").show(3000);
+            },function(){
+                $("#ph2 img").css("visibility","hidden");
+            });
+
+
+            $("#ph1>img").click(function(){
+                $("#ph11").slideToggle(1000);
+            });
+
+            $("#m3 li:eq(0)").css("list-style-image","url('images/disc_r1_c1.jpg')");
+            $("#m3 li:eq(2)").css("list-style-image","url('images/disc_r1_c1.jpg')");
+            $("#m3 li:eq(5)").css("list-style-image","url('images/disc_r1_c1.jpg')");
+            $("#nav2 li").slice(1,8).hover(function(){
+               $(this).addClass("bd");
+            },function(){
+                $(this).removeClass("bd");
+            });
+        });
+    </script>
+<link href="css/css1.css"  rel="stylesheet"/>
+
+</head>
+<body>
+<div id="t1"><img src="images/phone.png">客服热线：4000-000-000&nbsp;|&nbsp;关注我们<img src="images/weibo.png">&nbsp;<img src="images/weixin.png">
+<span>您好，欢迎来到西部开源技术中心&nbsp;|&nbsp;帮助中心</span></div>
+<div id="t2"><img src="images/top02.gif"></div>
+<div id="nav">
+<ul>
+<li style="margin-left:200px"><a href="home%20page.html">首页</a></li>
+<li><a href="about.html">关于开源</a></li>
+<li><a href="#">教育培训</a></li>
+<li><a href="#">学习视频</a></li>
+<li><a href="#">就业招聘</a></li>
+<li><a href="#">考务系统</a></li>
+<li><a href="#">企业技术支持</a></li>
+<li><a href="#">联系我们</a></li>
+</ul>
+<input type="text"/>
+<input type="button" size="15px" value="GO" style="background:#300; color:#FFF; border:2px solid #000"/>
+</div>
+<div id="m1"><div id="m1-1"><h1>|中心简介</h1></div>
+ <div id="m1-3">
+<img src="images/about-8.png">
+     <span>公司成立于2007年，发展至今已具一定规模，公司致力于提供专业的linux技术支持服务，在技术上不断与时俱进，努力扩展新的技术
+         领域，现已在电子商务平台，企业监控平台，高可用集群，负载均衡集群，数据库集群，分布式文件系统，企业数据集中管理平台，企业虚拟化平台等
+         领域具有完整的开源解决方案，并在生产环境中得到了很好的验证，七年间陆续参与了电信，移动，延长石油，长安一卡通，第四军医大学等多家企业项目的
+     服务器安全加固，系统集成综合解决方案，取得了良好的口碑和高度认可，在人才培养方面公司也是不遗余力，多年间已有百余名学员陆续签约阿里巴巴，
+      百度，腾讯，网易，新浪，搜狐，奇虎360，西门子，红帽，绿盟等多家互联网知名企业，为社会的发展和应届毕业生的就业尽自己的一份力量。</span>
+ </div>
+ <div id="m1-2">
+<div id="ph1">
+    <div id="ph11">
+    <img src="images/float_bar_qq-over.png">
+    <img src="images/float_bar_phone-over.png">
+    <img src="images/float_bar_weichat-over.png">
+   </div>
+    <img src="images/float_bar_top-over.png">
+</div><div id="ph2">
+    <img src="images/float_bar_qq_info.png">
+    <img src="images/float_bar_phone_info.png">
+</div>
+</div></div>
+<div id="m2"><div id="m2-1"><h1>|中心职能</h1><br>公司的最终宗旨就是推动西部linux的迅速发展，使其为西部相关产业的发展助力！</div>
+    <div id="m22">
+        <div class="m2-2"><span><img src="images/about-zxzn.png"></span>
+        <p>作为linux的教育培训平台，为企业提供量身定做的专项培训，为社会提供高效个性化的培训，协助教育系统进行linux课程定制，设计，
+            提供权威的系列linux考试认证。</p></div>
+        <div class="m2-2"><span><img src="images/about-zxzn2.png"></span>
+        <p>根据用户的各类移植需求，协助指导软件开发商实时系统的移植开发，并为用户的应用平台移植提供咨询，规划，优化，测试及知道
+         管理等全程技术支持。</p></div>
+        <div class="m2-2"><span><img src="images/about-zxzn3.png"></span>
+        <p>为有linux需求的政府部门，中小企业，软件开发商，行业大客户等用户在选择linux平台和linux应用时提供权威的可行性分析，
+            建议和指导，并提供可行的方案</p></div>
+        <div class="m2-2"><span><img src="images/about-zxzn4.png"></span>
+        <p>linux中心向用户提供不同等级的现场技术支持，根据用户实际需求提供高效，高质的现场支持服务。</p></div>
+</div>
+</div>
+<div id="m3"><div id="m3-1"><h1>|中心大事记</h1></div>
+    <ul>
+        <li>西部开源技术中心王同学被百度录取！</li>
+        <li>西部开源技术中心苟同学，王同学被新浪录取！</li>
+        <li>西部开源技术中心李同学被绿盟科技录取！</li>
+        <li>西部开源技术中心黄同学被阿里巴巴录取！</li>
+        <li>西部开源技术中心季同学被深圳腾讯录取！</li>
+        <li>西部开源技术中心刘同学被阿里巴巴录取！</li>
+        <li>西部开源技术中心李同学被腾讯录取！</li>
+        <li>西部开源技术中心刘同学被上海腾讯录取！</li>
+        <li>西部开源技术中心黄同学被深圳腾讯录取！</li>
+        <li>西部开源技术中心乔同学被深圳腾讯录取！</li>
+    </ul>
+    <img src="images/about_dsj.png" id="img1">
+    <img src="images/about_dsj2.png" id="img2">
+    <img src="images/about_dsj3.png" id="img3">
+</div>
+<div id="m4">
+<div id="m4-1"><h1>|服务企业</h1><br>中心始终致力于提供专业的Linux技术支持服务，在技术上不断与时俱进，努力扩展新的技术领域</div>
+<div id="m4-2">
+<a href="#"><img class="left" src="images/main_wrapper_left-comp.png"></a>
+<a href="#"><img class="right" src="images/main_wrapper_right-comp.png"></a>
+<div id="image">
+<img src="images/about_comp.png">
+<img src="images/about_comp2.png">
+<img src="images/about_comp3.png">
+<img src="images/about_comp4.png">
+<img src="images/about_comp5.png">
+</div>
+</div>
+</div>
+<div id="m5"><div id="m5-1"><h1>|合作企业</h1><br>中心成立七年间，先后向国内多家知名大型互联网企业输送人才，得到了众多企业的好评
+，形成一条绿色生态链</div>
+    <div id="m5-2">
+        <img src="images/about_copmc.png">
+        <img src="images/about_copmc2.png">
+        <img src="images/about_copmc3.png">
+        <img src="images/about_copmc4.png">
+        <img src="images/about_copmc5.png">
+    </div></div>
+<div id="m6"><div id="m6-1"><h1>|联系我们</h1></div>
+    <P>地址：陕西省太白南路181号西部电子社区A座C区506室</P>
+    <P>邮编：710065</P>
+    <p>电话：029-86699937&nbsp;029-88262419</p><br><br>
+    <p><a href="#">点击查看地图</a></p>
+</div>
+<div id="nav2">
+    <ul>
+        <li id="nav2-1">合作企业</li>
+        <li><a href="#">百度中国</a></li>
+        <li><a href="#">搜狐中国</a></li>
+        <li><a href="#">小米国际</a></li>
+        <li><a href="#">阿里巴巴</a></li>
+        <li><a href="#">华为国际</a></li>
+        <li><a href="#">天猫国际</a></li>
+        <li><a href="#">京东商场</a></li>
+        <li style="margin-left: 100px"><a href="#">更多合作企业></a></li>
+    </ul>
+</div>
+<div id="bt"><img src="images/stubottom01.gif"></div>
+</body>
+</html>
